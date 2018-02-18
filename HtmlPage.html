@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+<style>
+  body{
+    position:relative;
+	Top:323px;
+    margin-left:-1px;
+	margin-top:0px;
+    padding:0;
+    width:1920px;
+    height: 828px;
+    overflow: hidden;
+   /* background: url(Content/Images/bg2.png);*/
+    background-repeat: no-repeat;
+    border: 1px solid red;
+  }
+  
+  video{
+    position: absolute;
+    width: 100%;
+  }
+
+  .videoWrapper{
+    position: absolute;
+    /*background: rgba(0,0,0,.03);*/
+    width: 220px;
+    height: 220px;
+  }
+  .area{
+    position: absolute;
+    width: 90px;
+    z-index: 2;
+    height: 90px;
+    /*background: #d2691e14;*/
+  }
+
+  #erp{
+     top: 110px;
+    left: 8px;
+  }
+  #erp .area{
+        width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 80px;
+  }
+
+  #expand{
+        top: 213px;
+    left: 8px;
+  }
+  #expand .area{
+        width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 80px;
+  }
+
+  #light{
+        top: 296px;
+    left: 8px;
+  }
+  #light .area{
+        width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 80px;
+  }
+
+  #dart{
+    top: 391px;
+    left: 10px;
+  }
+  #dart .area{
+        width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 80px;
+  }
+
+  #atronnitromix{
+    top: 130px;
+    left: 369px;
+    width: 304px;
+  }
+  #atronnitromix .area{
+    width: 99px;
+    height: 177px;
+    top: 53px;
+    left: 102px;
+  }
+
+  #chart{
+    top: 190px;
+    left: 336px;
+    width: 644px;
+  }
+  #chart .area{
+    width: 189px;
+    height: 157px;
+    top: 243px;
+    left: 232px;
+  }
+
+  #premix{
+    top: 217px;
+    left: 1081px;
+    width: 442px;
+  }
+  #premix .area{
+    width: 189px;
+    height: 157px;
+    top: 143px;
+    left: 132px;
+  }
+
+#stndtr-kombi{
+    top: 217px;
+    left: 833px;
+    width: 442px;
+  }
+  #stndtr-kombi .area{
+    width: 189px;
+    height: 157px;
+    top: 143px;
+    left: 132px;
+  }
+
+  #home{
+    top: 135px;
+    left: 870px;
+    width: 200px;
+  }
+  #home .area{
+    width: 61px;
+    height: 61px;
+    top: 70px;
+    left: 71px;
+  }
+
+
+#recycle{
+    top: 201px;
+    left: 870px;
+    width: 200px;
+  }
+  #recycle .area{
+    width: 61px;
+    height: 61px;
+    top: 70px;
+    left: 71px;
+  }
+
+
+#note{
+    top: 201px;
+    left: 1123px;
+    width: 200px;
+  }
+  #note .area{
+    width: 61px;
+    height: 61px;
+    top: 70px;
+    left: 71px;
+  }
+
+    #tree{
+    top: 135px;
+    left: 1123px;
+    width: 200px;
+  }
+  #tree .area{
+    width: 61px;
+    height: 61px;
+    top: 70px;
+    left: 71px;
+  }
+
+
+#moneyOne{
+    top: 198px;
+    left: 1396px;
+    width: 344px;
+  }
+  #moneyOne .area{
+    width: 148px;
+    height: 44px;
+    top: 149px;
+    left: 96px;
+  }
+
+  #yearOne{
+    top: 198px;
+    left: 1563px;
+    width: 344px;
+  }
+  #yearOne .area{
+    width: 148px;
+    height: 44px;
+    top: 149px;
+    left: 96px;
+  }
+
+  #moneyTwo{
+    top: 449px;
+    left: 1396px;
+    width: 344px;
+  }
+  #moneyTwo .area{
+    width: 148px;
+    height: 44px;
+    top: 149px;
+    left: 96px;
+  }
+
+  #yearTwo{
+    top: 449px;
+    left: 1562px;
+    width: 344px;
+  }
+  #yearTwo .area{
+    width: 148px;
+    height: 44px;
+    top: 149px;
+    left: 96px;
+  }
+
+  #energyInfosWrapper{
+    position: absolute;
+    width: 290px;
+    left: 617px;
+    top: 168px;
+  }
+
+  #energyInfosWrapper .energyVideo{
+    width: 100%;
+  }
+
+  #energyInfosWrapper .area{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    border: 2px green solid;
+  }
+
+  #energyInfos_1 .area{
+    left: 50px;
+    top: 35px;
+  }
+
+    #energyInfos_1 .area_2{
+    left: 141px;
+    top: 39px;
+  }
+
+    #energyInfos_2 .area{
+        top: 35px;
+    left: 72px;
+  }
+
+    #energyInfos_2 .area_2{
+    top: 39px;
+    left: 162px;
+  }
+
+    #energyInfos_3 .area{
+    top: 46px;
+    left: 60px;
+  }
+
+      #energyInfos_3 .area_2{
+    top: 49px;
+    left: 187px;
+  }
+
+    #energyInfos_4 .area{
+        left: 94px;
+    top: 46px;
+  }
+
+      #energyInfos_4 .area_2{
+    left: 187px;
+    top: 110px;
+  }
+
+    #energyInfos_5 .area{
+      top: 65px;
+      left: 108px;
+  }
+
+  #energyInfos_5 .area_2{
+    top: 49px;
+    left: 225px;
+  }
+
+    #energyInfos_5 .area_3{
+    top: 109px;
+    left: 225px;
+  }
+
+
+    #energyInfos_6 .area{
+    top: 117px;
+    left: 54px;
+  }
+
+    #energyInfos_7 .area{
+        top: 117px;
+    left: 78px;
+
+  }
+
+    #energyInfos_8 .area{
+
+          top: 117px;
+    left: 102px;
+    
+  }
+
+    #energyInfos_9 .area{
+        left: 137px;
+    top: 53px;
+  }
+
+    #energyInfos_10 .area{
+          left: 137px;
+    top: 79px;
+    
+  }
+
+    #energyInfos_11 .area{
+        left: 137px;
+    top: 98px;
+  }
+
+    #energyInfos_12 .area{
+     left: 137px;
+    top: 120px;
+  }
+
+    #energyInfos_13 .area{
+
+    left: 137px;
+    top: 140px;
+    
+  }
+
+    #tree3 {
+    left: 229px;
+    top: 435px;
+  }
+
+    #tree3 .area{
+    left: 20px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  #lines{
+    width: 1920px;
+    height: 1080px;
+    z-index: -99;
+    opacity: 0.4;
+    top: -100px;
+}
+  }
+
+
+
+</style>
+
+<body style="background-color:black; overflow: hidden;">
+
+<div class="videoWrapper" id="lines">
+  <div class="area"></div>
+  <video autoplay loop name="media" class="video">
+    <source src="Content/Videos/lines.webm" type="video/webm">
+  </video>
+</div>
+
+
+<div class="videoWrapper" id="erp">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/erp.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="expand">
+  <div class="area"></div>
+  <video  name="media" class="video">
+    <source src="Content/Videos/expand.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="light">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/light.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="dart">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/dart.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="atronnitromix">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/atronnitromix.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="chart">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/chart.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="stndtr-kombi">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/stndtr-kombi.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="premix">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/premix.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="home">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/home.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="tree">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/tree.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="note">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/note.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="recycle">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/recycle.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="moneyOne">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/moneyOne.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="yearOne">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/yearOne.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="moneyTwo">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/moneyTwo.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="yearTwo">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/yearTwo.webm" type="video/webm">
+  </video>
+</div>
+
+<div class="videoWrapper" id="tree3">
+  <div class="area"></div>
+  <video name="media" class="video">
+    <source src="Content/Videos/3trees.webm" type="video/webm">
+  </video>
+</div>
+
+
+<div class="videoWrapper" id="energyInfosWrapper">
+
+  <div class="videoWrapper energyVideo" id="energyInfos_1">
+    <div class="area"></div> <div class="area area_2"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_1.webm" type="video/webm">
+    </video>
+  </div>
+
+
+    <div class="videoWrapper energyVideo" id="energyInfos_2">
+    <div class="area"></div> <div class="area area_2"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_2.webm" type="video/webm">
+    </video>
+  </div>
+
+
+    <div class="videoWrapper energyVideo" id="energyInfos_3">
+    <div class="area"></div> <div class="area area_2"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_3.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_4">
+    <div class="area"></div> <div class="area area_2"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_4.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_5">
+    <div class="area"></div> <div class="area area_2"></div> <div class="area area_3"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_5.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_6">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_6.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_7">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_7.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_8">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_8.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_9">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_9.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_10">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_10.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_11">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_11.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_12">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_12.webm" type="video/webm">
+    </video>
+  </div>
+
+    <div class="videoWrapper energyVideo" id="energyInfos_13">
+    <div class="area"></div>
+    <video name="media" class="video">
+      <source src="Content/Videos/energyInfos/energyInfos_13.webm" type="video/webm">
+    </video>
+  </div>
+
+</div>
+
+
+
+    <script>
+      $(function() {
+
+         $(".area").mouseover(function(){
+
+          $(this).parent().children(".video")[0].play();
+
+          if($(this).parent().hasClass("energyVideo")){
+
+            $(".energyVideo video").hide();
+            $(this).parent().children(".video").show();
+            
+          }
+          
+        });
+
+     });
+
+    </script>
+</body>
+</html>
