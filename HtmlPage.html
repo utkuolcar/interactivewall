@@ -8,20 +8,24 @@
 
 <style>
   body{
-    position:relative;
-	Top:254px;
-    margin-left:-1px;
-	margin-top:0px;
+    margin:0;
     padding:0;
-    width:1920px;
-    height: 828px;
+    width:4096px;
+    height: 2015px;
     overflow: hidden;
-    /*background: url(Content/Images/bg2.png);*/
+   /* background: url(Content/Images/bg2.png);*/
     background-repeat: no-repeat;
+<<<<<<< HEAD
     border: 0px solid red;
 	background-color:"#ddd";
+=======
+    /*border: 2px solid red;*/
+    position: relative;
+    top: 397px;
+	 background-color:black;
+>>>>>>> b01993811c0d4b1cae3a2d29b8fd6bae13910380
   }
-  
+
   video{
     position: absolute;
     width: 100%;
@@ -30,339 +34,327 @@
   .videoWrapper{
     position: absolute;
     /*background: rgba(0,0,0,.03);*/
-    width: 220px;
-    height: 220px;
+    width: 505px;
+    height: 505px;
   }
   .area{
     position: absolute;
     width: 90px;
     z-index: 2;
     height: 90px;
-    /*background: #d2691e14;*/
+   /* background: rgba(0,0,0,.4);*/
   }
 
   #erp{
-     top: 110px;
-    left: 8px;
+     top: 211px;
+    left: 0px;
   }
   #erp .area{
-        width: 60px;
-    height: 60px;
-    top: 80px;
-    left: 80px;
+    width: 140px;
+    height: 140px;
+    top: 180px;
+    left: 180px;
   }
 
   #expand{
-        top: 213px;
-    left: 8px;
+    top: 427px;
+    left: 0px;
   }
   #expand .area{
-        width: 60px;
-    height: 60px;
-    top: 80px;
-    left: 80px;
+    width: 140px;
+    height: 140px;
+    top: 180px;
+    left: 180px;
   }
 
   #light{
-        top: 296px;
-    left: 8px;
+    top: 607px;
+    left: 0px;
   }
   #light .area{
-        width: 60px;
-    height: 60px;
-    top: 80px;
-    left: 80px;
+    width: 140px;
+    height: 140px;
+    top: 180px;
+    left: 180px;
   }
 
   #dart{
-    top: 391px;
-    left: 10px;
+    top: 803px;
+    left: 0px;
   }
   #dart .area{
-        width: 60px;
-    height: 60px;
-    top: 80px;
-    left: 80px;
+    width: 140px;
+    height: 140px;
+    top: 180px;
+    left: 180px;
   }
 
   #atronnitromix{
-    top: 130px;
-    left: 369px;
-    width: 304px;
+    top: 180px;
+    left: 709px;
+    width: 828px;
   }
   #atronnitromix .area{
-    width: 99px;
-    height: 177px;
-    top: 53px;
-    left: 102px;
+    width: 279px;
+    height: 457px;
+    top: 163px;
+    left: 272px;
   }
 
   #chart{
-    top: 190px;
-    left: 336px;
-    width: 644px;
+    top: 776px;
+    left: 1056px;
+    width: 665px;
   }
   #chart .area{
-    width: 189px;
-    height: 157px;
-    top: 243px;
-    left: 232px;
+    width: 339px;
+    height: 294px;
+    top: 175px;
+    left: 162px;
   }
 
   #premix{
-    top: 217px;
-    left: 1081px;
-    width: 442px;
+    top: 500px;
+    left: 2313px;
+    width: 900px;
   }
-  #premix .area{
-    width: 189px;
-    height: 157px;
-    top: 143px;
-    left: 132px;
+  #premix .area, #stndtr-kombi .area{
+    width: 489px;
+    height: 377px;
+    top: 253px;
+    left: 182px;
   }
 
 #stndtr-kombi{
-    top: 217px;
-    left: 833px;
-    width: 442px;
-  }
-  #stndtr-kombi .area{
-    width: 189px;
-    height: 157px;
-    top: 143px;
-    left: 132px;
+top: 500px;
+    left: 1763px;
+    width: 900px;
   }
 
   #home{
-    top: 135px;
-    left: 870px;
-    width: 200px;
+    top: 305px;
+    left: 1870px;
+    width: 350px;
   }
-  #home .area{
-    width: 61px;
-    height: 61px;
-    top: 70px;
-    left: 71px;
+  #home .area, #recycle .area, #note .area, #tree .area{
+    width: 121px;
+    height: 131px;
+    top: 110px;
+    left: 117px;
   }
 
 
 #recycle{
-    top: 201px;
-    left: 870px;
-    width: 200px;
-  }
-  #recycle .area{
-    width: 61px;
-    height: 61px;
-    top: 70px;
-    left: 71px;
+  top: 470px;
+  left: 1870px;
+  width: 350px;
   }
 
 
 #note{
-    top: 201px;
-    left: 1123px;
-    width: 200px;
-  }
-  #note .area{
-    width: 61px;
-    height: 61px;
-    top: 70px;
-    left: 71px;
+  top: 470px;
+  left: 2410px;
+  width: 350px;
   }
 
-    #tree{
-    top: 135px;
-    left: 1123px;
-    width: 200px;
-  }
-  #tree .area{
-    width: 61px;
-    height: 61px;
-    top: 70px;
-    left: 71px;
+
+#tree{
+      top: 305px;
+      left: 2410px;
+      width: 350px
   }
 
 
 #moneyOne{
-    top: 198px;
-    left: 1396px;
-    width: 344px;
+  top: 414px;
+  left: 2962px;
+  width: 746px;
   }
   #moneyOne .area{
-    width: 148px;
-    height: 44px;
-    top: 149px;
-    left: 96px;
+    width: 308px;
+    height: 84px;
+    top: 329px;
+    left: 216px;
   }
 
   #yearOne{
-    top: 198px;
-    left: 1563px;
-    width: 344px;
+    top: 414px;
+    left: 3323px;
+    width: 746px;
   }
   #yearOne .area{
-    width: 148px;
-    height: 44px;
-    top: 149px;
-    left: 96px;
+    width: 308px;
+    height: 84px;
+    top: 329px;
+    left: 216px;
   }
 
   #moneyTwo{
-    top: 449px;
-    left: 1396px;
-    width: 344px;
+    top: 951px;
+    left: 2967px;
+    width: 746px;
   }
   #moneyTwo .area{
-    width: 148px;
-    height: 44px;
-    top: 149px;
-    left: 96px;
+    width: 308px;
+    height: 84px;
+    top: 329px;
+    left: 216px;
   }
 
   #yearTwo{
-    top: 449px;
-    left: 1562px;
-    width: 344px;
+    top: 951px;
+    left: 3323px;
+    width: 746px;
   }
   #yearTwo .area{
-    width: 148px;
-    height: 44px;
-    top: 149px;
-    left: 96px;
+    width: 308px;
+    height: 84px;
+    top: 329px;
+    left: 216px;
   }
 
   #energyInfosWrapper{
     position: absolute;
-    width: 290px;
-    left: 610px;
-    top: 173px;
+    width: 580px;
+    left: 1326px;
+    top: 388px;
   }
 
   #energyInfosWrapper .energyVideo{
     width: 100%;
   }
 
-  #energyInfosWrapper .area{
-    width: 10px;
-    height: 10px;
+  #energyInfosWrapper .borders{
+    width: 17px;
+    height: 17px;
     border-radius: 20px;
     border: 2px green solid;
+    z-index: 2;
+    position: absolute;
   }
 
-  #energyInfos_1 .area{
-    left: 50px;
-    top: 35px;
+  #energyInfosWrapper .area{
+    width: 50px;
+    height: 50px;
+    border-radius: 33px;
+    border:none;
+    top: -18px;
+    position: absolute;
+    left: -15px;
+    z-index: 9999;
+    background: none;
+
+}
+
+
+  #energyInfos_1 .borders{
+    left: 88px;
+    top: 56px;
   }
 
-    #energyInfos_1 .area_2{
-    left: 141px;
-    top: 39px;
+    #energyInfos_1 .borders_2{
+    left: 281px;
+    top: 65px;
   }
 
-    #energyInfos_2 .area{
-        top: 35px;
-    left: 72px;
+    #energyInfos_2 .borders{
+      top: 56px;
+      left: 134px;
   }
 
-    #energyInfos_2 .area_2{
-    top: 39px;
-    left: 162px;
+      #energyInfos_2 .borders_2{
+        top: 65px;
+        left: 328px;
   }
 
-    #energyInfos_3 .area{
-    top: 46px;
-    left: 60px;
+    #energyInfos_3 .borders{
+      top: 80px;
+      left: 109px;
   }
 
-      #energyInfos_3 .area_2{
-    top: 49px;
-    left: 187px;
+      #energyInfos_3 .borders_2{
+        top: 86px;
+        left: 380px;
   }
 
-    #energyInfos_4 .area{
-        left: 94px;
-    top: 46px;
+    #energyInfos_4 .borders{
+      left: 182px;
+      top: 79px;
   }
 
-      #energyInfos_4 .area_2{
-    left: 187px;
-    top: 110px;
+      #energyInfos_4 .borders_2{
+        left: 380px;
+        top: 220px;
   }
 
-    #energyInfos_5 .area{
-      top: 65px;
-      left: 108px;
+    #energyInfos_5 .borders{
+      top: 122px;
+      left: 211px;
   }
 
-  #energyInfos_5 .area_2{
-    top: 49px;
-    left: 225px;
+  #energyInfos_5 .borders_2{
+    top: 87px;
+    left: 461px;
   }
 
-    #energyInfos_5 .area_3{
-    top: 109px;
-    left: 225px;
+    #energyInfos_5 .borders_3{
+      top: 217px;
+      left: 461px;
   }
 
 
-    #energyInfos_6 .area{
-    top: 117px;
-    left: 54px;
+    #energyInfos_6 .borders{
+      top: 233px;
+      left: 97px;
   }
 
-    #energyInfos_7 .area{
-        top: 117px;
-    left: 78px;
+    #energyInfos_7 .borders{
+      top: 233px;
+      left: 147px;
 
   }
 
-    #energyInfos_8 .area{
-
-          top: 117px;
-    left: 102px;
-    
+    #energyInfos_8 .borders{
+      left: 198px;
+      top: 232px;
   }
 
-    #energyInfos_9 .area{
-        left: 137px;
-    top: 53px;
+    #energyInfos_9 .borders{
+      left: 274px;
+      top: 93px;
   }
 
-    #energyInfos_10 .area{
-          left: 137px;
-    top: 79px;
-    
+    #energyInfos_10 .borders{
+      left: 274px;
+      top: 150px;
   }
 
-    #energyInfos_11 .area{
-        left: 137px;
-    top: 98px;
+    #energyInfos_11 .borders{
+      left: 274px;
+      top: 194px;
   }
 
-    #energyInfos_12 .area{
-     left: 137px;
-    top: 120px;
+    #energyInfos_12 .borders{
+      left: 274px;
+      top: 241px;
   }
 
-    #energyInfos_13 .area{
-
-    left: 137px;
-    top: 140px;
-    
+    #energyInfos_13 .borders{
+      left: 274px;
+      top: 285px;
   }
 
     #tree3 {
-    left: 229px;
-    top: 435px;
+    left: 299px;
+    top: 701px;
+    width: 840px;
   }
 
     #tree3 .area{
-    left: 20px;
-    top: 10px;
-    width: 200px;
-    height: 200px;
-    
+    left: 310px;
+    top: 270px;
+    width: 400px;
+    height: 420px;
   }
 
   #lines{
@@ -373,15 +365,26 @@
     top: -100px;
 }
   }
+#bg-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
 
+#bg-image img{
+  width: 100%;
+}
 
 
 </style>
 
-<body style="background-color:black; overflow: hidden;">
-<!--
-<img src="Content/Images/bg2.png" style="position: absolute; ">
--->
+<body>
+
+<!--<div id="bg-image">
+  <img src="Content/Images/bg2.png"/>
+</div>-->
+
 <div class="videoWrapper" id="lines">
   <div class="area"></div>
   <video autoplay loop name="media" class="video">
@@ -513,7 +516,7 @@
 <div class="videoWrapper" id="energyInfosWrapper">
 
   <div class="videoWrapper energyVideo" id="energyInfos_1">
-    <div class="area"></div> <div class="area area_2"></div>
+    <div class="borders"><div class="area"></div></div> <div class="borders borders_2"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_1.webm" type="video/webm">
     </video>
@@ -521,7 +524,7 @@
 
 
     <div class="videoWrapper energyVideo" id="energyInfos_2">
-    <div class="area"></div> <div class="area area_2"></div>
+    <div class="borders"><div class="area"></div></div> <div class="borders borders_2"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_2.webm" type="video/webm">
     </video>
@@ -529,77 +532,77 @@
 
 
     <div class="videoWrapper energyVideo" id="energyInfos_3">
-    <div class="area"></div> <div class="area area_2"></div>
+    <div class="borders"><div class="area"></div></div> <div class="borders borders_2"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_3.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_4">
-    <div class="area"></div> <div class="area area_2"></div>
+    <div class="borders"><div class="area"></div></div> <div class="borders borders_2"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_4.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_5">
-    <div class="area"></div> <div class="area area_2"></div> <div class="area area_3"></div>
+    <div class="borders"><div class="area"></div></div> <div class="borders borders_2"><div class="area"></div></div> <div class="borders borders_3"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_5.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_6">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_6.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_7">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_7.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_8">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_8.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_9">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_9.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_10">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_10.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_11">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_11.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_12">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_12.webm" type="video/webm">
     </video>
   </div>
 
     <div class="videoWrapper energyVideo" id="energyInfos_13">
-    <div class="area"></div>
+    <div class="borders"><div class="area"></div></div>
     <video name="media" class="video">
       <source src="Content/Videos/energyInfos/energyInfos_13.webm" type="video/webm">
     </video>
@@ -614,16 +617,29 @@
 
          $(".area").mouseover(function(){
 
-          $(this).parent().children(".video")[0].play();
+        
 
-          if($(this).parent().hasClass("energyVideo")){
+          if($(this).parent().hasClass("borders")){
 
-            $(".energyVideo video").hide();
-            $(this).parent().children(".video").show();
-            
+
+               console.log("hey");
+
+              $(this).parent().parent().children(".video")[0].play();
+
+                $(".energyVideo video").hide();
+                $(this).parent().parent().children(".video").show();
+
+    
+
+          }else{
+
+             $(this).parent().children(".video")[0].play();
+
           }
-          
+
         });
+
+
 
      });
 
